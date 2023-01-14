@@ -17,10 +17,10 @@ RUN wget https://github.com/azeezsalu/techmax/archive/refs/heads/main.zip
 RUN unzip main.zip
 
 # Copy files into html directory
-RUN cp -r awesome-deep-vision/* /var/www/html
+RUN cp -r techmax/* /var/www/html
 
 # Remove unwanted folder
-RUN rm -rf awesome-deep-vision main.zip
+RUN rm -rf techmax main.zip
 
 # Expose port 80 on container
 EXPOSE 80
