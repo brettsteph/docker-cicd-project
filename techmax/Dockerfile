@@ -17,10 +17,10 @@ RUN wget https://github.com/azeezsalu/techmax/archive/refs/heads/main.zip
 RUN unzip main.zip
 
 # Copy files into html directory
-RUN cp -R /techmax /var/www/html
+RUN cp -R techmax-main/* /var/www/html
 
 # Remove unwanted folder
-RUN rm -rf techmax main.zip
+RUN rm -rf techmax-main main.zip
 
 # Expose port 80 on container
 EXPOSE 80
