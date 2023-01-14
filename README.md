@@ -1,5 +1,5 @@
 # docker-cicd-project
-This is a repository to build a docker image.
+This is a repository to build docker images.
 
 1. Create shell scripts and use environment variables.
 2. Create buildspec.yml file
