@@ -5,7 +5,7 @@ RUN yum update - y && \
     yum install -y httpd && \
     yum search wget && \
     yum install wget -y && \
-    yum install unzip -yum
+    yum install unzip -y
 
 # Change directory
 RUN cd /var/www/html
