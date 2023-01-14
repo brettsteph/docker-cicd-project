@@ -1,0 +1,20 @@
+version: 0.2
+
+phases:
+  install:
+   runtime-version:
+    python: 3.x
+
+  pre_build:
+   commands:
+    - echo Entered the pre_build phase...
+    - echo make shell script execuatable...
+    - chmod +x build_image.sh push_image.sh
+    - echo execute build shell scripts...
+    - ./build_image.sh
+
+  build:
+   commands:
+    - echo Entered the build phase...
+    - echo execute push shell scripts...
+    - ./push_image.sh
