@@ -9,7 +9,7 @@ RUN apt update -y && \
     service apache2 status && \
     apt install ufw -y && \
     ufw allow 'Apache' && \
-    ufw allow status && \
+    ufw status && \
     apt install wget -y && \
     apt install unzip -y
 
