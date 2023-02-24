@@ -7,7 +7,7 @@ RUN apt update -y && \
     apt clean && \
     service apache2 start && \
     service apache2 status && \
-    apt install ufw && \
+    apt install ufw -y && \
     ufw allow 'Apache' && \
     ufw allow status && \
     apt install wget -y && \
