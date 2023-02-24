@@ -5,7 +5,10 @@ RUN apt update -y && \
     apt install -y apache2 && \
     # apt apache2-utils && \
     apt clean && \
-    systemctl status apache2 && \
+    service apache2 start && \
+    service apache2 status && \
+    ufw allow 'Apache' && \
+    ufw allow status && \
     apt install wget -y && \
     apt install unzip -y
 
