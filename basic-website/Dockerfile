@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 # Install dependencies
-RUN apt update - y && \
+RUN apt update -y && \
     apt install -y apache2 && \
     # apt apache2-utils && \
     apt clean && \
