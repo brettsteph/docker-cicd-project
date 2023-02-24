@@ -20,13 +20,13 @@ RUN cd /var/www/html
 RUN wget https://github.com/arvind37/Basic-Website-using-HTML-CSS/archive/refs/heads/master.zip
 
 # Unzip folder
-RUN unzip Basic-Website-using-HTML-CSS-master.zip
+RUN master.zip
 
 # Copy files into html directory recursively
 RUN cp -R Basic-Website-using-HTML-CSS-master/* /var/www/html
 
 # Remove unwanted folder
-RUN rm -rf Basic-Website-using-HTML-CSS-master Basic-Website-using-HTML-CSS-master.zip
+RUN rm -rf Basic-Website-using-HTML-CSS-master master.zip
 
 #ENV APACHE_RUN_USER www-data
 #ENV APACHE_RUN_GROUP www-data
