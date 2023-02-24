@@ -5,7 +5,7 @@ RUN apt update -y && \
     apt install -y apache2 && \
     # apt apache2-utils && \
     apt clean && \
-    apt systemctl status apache2 && \
+    systemctl status apache2 && \
     apt install wget -y && \
     apt install unzip -y
 
