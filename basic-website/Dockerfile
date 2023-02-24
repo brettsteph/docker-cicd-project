@@ -8,8 +8,8 @@ RUN apt update -y && \
     service apache2 start && \
     service apache2 status && \
     apt install ufw -y && \
-    ufw allow 'Apache' && \
-    ufw status && \
+    sudo ufw allow 'Apache' && \
+    sudo ufw status && \
     apt install wget -y && \
     apt install unzip -y
 
